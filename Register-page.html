@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page | my web</title>
+    <style>
+        body {
+            background-color: rgb(38, 147, 143);
+            font-family:monospace;
+        }
+
+        .mainbox {
+            padding: 0%;
+            background-color:rgb(247, 241, 241);
+            margin: auto;
+            margin-top: 140px;
+            width: 50rem;
+            /* border:2px solid black; */
+            border-radius: 15px;
+            height: 500px;
+
+        }
+
+        .imgdiv {
+            float: left;
+            /* border: 2px solid; */
+            height: 500px;
+            position: relative;
+            width: 400px;
+
+        }
+
+        img {
+            border-radius: 15px 0px 0px 15px;
+        }
+
+        .photo-text {
+            position: absolute;
+            top: 10px;
+            /* border: 3px solid ; */
+            color: white;
+            padding: 7px 15px;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+         }
+
+        
+        .center{
+            position: absolute;
+            top: 80px;
+            font-size: 11px;
+            line-height: 0px;
+            width: 100%;
+            text-align: center;
+            color: white;
+
+        }
+
+        h2{
+            font-size: 21px;
+        }
+        .bottom{
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            text-align: center;
+            font-size: 11px;
+            color: white;
+            
+        }
+        .form{
+            display: inline-block;
+            width: 400px;
+
+        }
+        .form input{
+            border: 3px inset rgb(187, 239, 237);
+            padding: 3px;
+            margin-bottom: 10px;
+            outline: none;
+        }
+        .form p, h2{
+            display: inline-block;
+            width: 54%;
+            /* text-align: center; */
+            margin-top: 20px;
+            /* border: 2px dashed; */
+        }
+        .form-head{
+            text-align: center;
+        }
+        .form p{
+            margin-top: 0px;
+            font-size: 12px;
+        }
+        .form  h2{
+            font-size: 25px;
+            margin-bottom: 0px;
+            color: rgb(38, 147, 143);
+        }
+
+        .form label{
+
+            font-size: 14px;
+            font-weight: bold;
+            padding-right: 20px;
+            width:130px;
+            padding-right: 0px;
+            display: inline-block;
+        }
+
+        .info{
+            margin:20px;
+            margin-left: 45px;
+            /* text-align: justify; */
+        }
+        .btn{
+            width: 80px;
+            padding: 10px 40px;
+            color: white;
+            border: none;
+            border-radius: 1px;
+            font-size: 13px;
+            box-shadow: 2px 2px rgb(231, 224, 224);
+        }
+
+        #btn1{
+            background-color: rgb(36, 43, 91); position:absolute;
+            right: 118px;
+        }
+        #btn2{
+            background-color: rgb(38, 147, 143);
+            position:absolute;
+            right: 25px;
+        }
+
+        .btngrp{
+            position: relative;
+        }
+        span{
+            font-weight: bold;
+
+        }
+
+    </style>
+</head>
+ 
+<body>
+    <div class="mainbox">
+        <!-- Left section of registration page -->
+        <div class="imgdiv"><img height="500px" width="400px" src="img/photo_image.jpg" alt="">
+            <div class="photo-text">
+                <span class="text">PHOTOGRAPHY.</span>
+                <i class="fas fa-bars icon"></i>
+                
+            </div>
+            <div class="center">
+                <p>CLICK FOR YOUR SHOOT</p>
+                <h2>Photography</h2>
+            </div>
+            <div class="bottom">
+                <p>JOURNEY EVERYWHERE</p>
+            </div>
+        </div>
+
+        <!-- Right section of registration page -->
+        <div class="form">
+           <div class="form-head">
+            <h2>Registration</h2>
+            <p>CLICK FOR YOU SHOOT</p>
+           </div>
+           <div class="info">
+            <label for="name">Name</label>
+           <input type="text" id="name" name="Name" value="" placeholder="enter yor name"><br>
+           <label for="email">Email</label>
+           <input type="text" id="email" name="Email" value="" placeholder="enter your email"><br>
+           <label for="gender">Gender</label>
+           <input type="radio" id="gender" name="gender" value="Male">Male
+           <input type="radio" id="gender" name="gender" value="Female">Female<br>
+
+           <label for="Dob">Date of Birth</label>
+           <input type="date" id="dob" name="dob" value="dob"><br>
+           <label for="city">City</label>
+           <input type="text" id="city" name="city" value="" placeholder="eg. Meerut"><br>
+           <label for="country">Country</label>
+           <input type="text" name="country" value="" placeholder="eg. India" id="country"><br>
+           <label for="subscription">Subscription</label> <span>Gold</span> &nbsp <span>Silver</span> &nbsp <span>Bronze</span><br><br>
+
+
+           <div class="btngrp">
+            <input type="button" class="btn" id="btn1" name="cancel" value="Cancel">
+           <input type="button" class="btn" id="btn2" name="Submit" value="Submit">
+           </div>
+           </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/14000a90eb.js" crossorigin="anonymous"></script>
+
+</html>
